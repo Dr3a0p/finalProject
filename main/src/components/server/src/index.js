@@ -1,6 +1,5 @@
 import express from "express";
 import cors from "cors";
-import { StreamChat } from "stream-chat";
 import { v4 as uuidv4 } from "uuid";
 import bcrypt from "bcrypt";
 const app = express();
@@ -10,7 +9,6 @@ app.use(express.json());
 const api_key = "ufys48qg5naw";
 const api_secret =
   "bh6badhwbqpsn76bxx3ftxa7vwmkk83psh4p2edhyv4txr99n3rutajdvqfn7dg8";
-const serverClient = StreamChat.getInstance(api_key, api_secret);
 
 app.post("/signup", async (req, res) => {
   try {
