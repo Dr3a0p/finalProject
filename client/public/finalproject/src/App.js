@@ -10,7 +10,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import Logo from "./components/Logo"; // Import the Logo component
 import Register from './components/auth/Register'
-import Login from '../../server/models/Login.js'
+import Login from '../server/models/Login.js'
 import Home from '../../common/Home.js'
 
 
